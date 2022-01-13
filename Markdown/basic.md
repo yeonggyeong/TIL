@@ -1,0 +1,105 @@
+# Markdown 학습하기
+
+##  제목 ( heading )
+
+가장 큰 제목부터 ~ 6 번째로 큰 제목까지 존재
+
+#의  개수로 제목의 중요도를 지정
+
+
+## 목록(list)
+
+순서가 있는 목록(ordered list)과 순서가 없는 목록(unordered list) 가 있다.
+
+### 순서가 없는 목록
+
+`-`혹은 `*`를 앞에 붙이고 띄어쓰기
+
+- python
+- js
+- django
+- vue
+
+### 순서가 있는 목록
+
+1을 쓰고 띄어쓰기
+
+1. md 학습
+2. git 기초 학습
+3. github 학습
+
+
+
+## 강조(Emphasis)
+
+글자의  스타일링 지정
+
+1. 기울임 : `*`로 감싼 글자들은 *기울어* 집니다.
+2. 굵게 : `**`로 감싼 글자들은 **굵어**집니다.
+3. 취소 : `~~`로 감싼 글자들은 ~~취소선~~이 생깁니다.
+4. 인라인 코드 : `백틱`으로 감싼 글자들은 `코드`처럼 표시됩니다.
+
+
+
+## 코드 블럭
+
+백틱 세개로 감싼 블럭은 코드 출력용입니다.
+
+```python
+def my_function():
+	print("Hello World")
+```
+
+
+
+## 표(Table)
+
+| 이름   | 전공   | 나이 |
+| ------ | ------ | ---- |
+| 공영경 | 빅경통 | 24   |
+| 김싸피 | 전자   | 29   |
+
+
+
+## 가로선
+
+`---`를 입력하시면 가로선이 생성됩니다.
+
+---
+
+
+
+## 링크 & 이미지
+
+복사 => 붙여넣기 하시면 자동으로 추가
+
+[영경 깃허브] ( https://github.com/yeonggyeong?tab=overview&from=2022-01-01&to=2022-01-13 )
+
+이미지를 같이 보내기 위해 기본 설정을 해야함 혹은 같이 보내야함
+
+
+
+### 캡쳐 방법
+
+window 키 + shift + s
+
+![image-20220113131602165](basic.assets/image-20220113131602165.png)
+
+## 수식 (Latex)
+
+>  원래 마크다운은 지원하지 않으나, Typora가 추가적으로 지원하는 기능
+
+
+
+```Markdown
+$$
+\begin{align*}
+y = y(x,t) &= A e^{i\theta} \\
+&= A (\cos \theta + i \sin \theta) \\
+&= A (\cos(kx - \omega t) + i \sin(kx - \omega t)) \\
+&= A\cos(kx - \omega t) + i A\sin(kx - \omega t)  \\
+&= A\cos \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big) + i A\sin \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big)  \\
+&= A\cos \frac{2\pi}{\lambda} (x - v t) + i A\sin \frac{2\pi}{\lambda} (x - v t)
+\end{align*}
+$$
+```

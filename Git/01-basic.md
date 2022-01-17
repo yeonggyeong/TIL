@@ -59,6 +59,8 @@ $ git add <filename>
 $ git add <filename> <filename>
 # 1-3) 해당 위치에 있는 모든 파일을 스테이징 단계로 올리기
 $ git add .
+# 2) 스테이징 단계에서 내리기
+$ git restore --staged <filename>
 
 ```
 
@@ -91,7 +93,57 @@ $ git commit -m '변경이유'
 
 2)의 결과가 초록색이면 commit이 가능하고, 빨간색이면 commit이 불가능하다는 의미이다.
 
-### 5) 
+### 5) 원격저장소와 로컬저장소 연결
+
+원격저장소에 저장하기 위해서는 원격 저장소와 로컬 저장소를 연결해야 한다.
+
+```
+# 1) 저장소 연결하기
+$ git remote add origin <git주소>
+# 2) 저장소 확인하기
+$ git remote -v
+```
+
+> origin의 주소와 원하는 url의 주소가 동일하다면 성공 !
+
+### 6) local repo -> remote repo ( push )
+
+local repository에 저장해 놓은 commit을 remote repository로 push 해야 한다.
+```
+# push 하기
+$ git push origin master
+```
+
+### 7) 원격 저장소 복제
+
+원격 저장소에 있는 버전을 사용하기 위해서는 로컬 저장소로 복제해야 한다.
+```
+# 1) clone 하기
+$ git clone <원격저장소url>
+# 2) puu
+$ git pull origin master
+```
+
+최초 복제를 한 후에는 pull 을 통해 버전 업데이트를 할 수 있다.
+
+### 8) repository 해제하기
+
+init으로 repository를 초기화한다면, rollback을 통해 git에서 파일 관리를 해제 할 수 있다.
+
+```
+# 1-1) rollback 하기
+$ git rollback
+# 1-2) 삭제하기
+$ rm -rf .git/
+```
+
+### 9) Git Checklist
+
+1. repository 안에 repository 생성하지 않기
+2. home directory를 repository로 설정하지 않기
+   
+
+   
 
 
 

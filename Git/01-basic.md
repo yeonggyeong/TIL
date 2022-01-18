@@ -120,7 +120,7 @@ $ git push origin master
 ```
 # 1) clone 하기
 $ git clone <원격저장소url>
-# 2) puu
+# 2) pull
 $ git pull origin master
 ```
 

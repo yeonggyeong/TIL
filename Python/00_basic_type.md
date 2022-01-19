@@ -24,7 +24,52 @@ x, y = 1, 2 # x = 1, y = 2 으로 값 할당
 ### 변수명 규칙
 - 첫 글자에 숫자가 올 수 없음( 영문, _ 가능 )
 - 길이에 제한이 없음
-- **파이썬 예약어를 사용할 수 없음**
+- **아래와 같은 파이썬 예약어를 사용할 수 없음**
+```python
+False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
+```
+- 내장함수나 모듈 등의 이름으로도 만들면 기존 내장함수나 모듈이 동작하지 않음
 
 
+## Data Type
 
+ **Data Type은 크게 Boolean, Numeric, String, None 으로 구분**
+
+### 1. Boolean Type
+True / False 로 구성
+
+비교 연산 혹은 논리 연산에서 활용
+
+0 -> False, 1 -> True 로 인식
+
+빈 자료형, 빈 문자열, None은 모두 False로 인식
+
+### 2. Numeric Type
+Numeric Type은 다시 int, float, complex로 구분
+
+#### 1) int
+모든 정수는 `int`로 표현
+정수를 8진수(`0b`), 2진수(`0o`), 16진수(`0x`)로 변경 가능
+```python
+x = 3 # Numeric Type 변수 선언
+binary_x = 0b3 # 3의 2진수
+decimal_x = 0o3 # 3의 10진수
+hexade_x = 0x3 # 3의 16진수
+```
+
+#### 2) float
+실수는 `float`로 표현
+```python
+x = 3.4 # Float Type 변수 선언
+```
+
+#### 3) complex
+complex type이란 복소수 타입을 의미
+
+실수와 허수로 구성
+
+허수를 j로 표현
+
+```python
+x = 3 + 4j # complex Type 변수 선언 
+```

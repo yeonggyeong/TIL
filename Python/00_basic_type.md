@@ -157,6 +157,7 @@ to = datetime.datetime.now()
 print(f'오늘은 {to:%m}월 {to:%d}일이다.')
 ```
 
-
+## None Type
+값이 없음을 표현하기 위해 `None` 타입이 존재
 
 

@@ -108,5 +108,55 @@ print("""
 | `\'` |            ' ( 인용 부호 )            |
 | `\"` |            " ( 인용 부호 )            |
 
+## Formatting
+
+문자열을 만들 때 원하는 위치에 특정값을 삽입하여 출력
+
+Formatting에도 여러가지 방법이 존재
+
+### 1. %-formatting
+
+% 기호 뒤에 자료형을 가르키는 문자
+
+| 문자 |                 자료형                  |
+| ---- | :-----------------------------------: |
+| `%s` |                문자열                |
+| `%d` |                 정수                 |
+| `%f` |                 실수                 |
+| `%o` |                 8진수                  |
+| `%x` |                  16진수                  |
+| `%%` |            % ( 문자 )            |
+
+```python
+print('my name is %s'% '파이썬') #my name is 파이썬 출력 -> 문자열 formatting
+print('%d = 4 + 1'% 5) # 5 = 4 + 1 출력 -> 정수 formatting
+```
+### 2. str-formatting
+
+formatting 할 위치에 `{}`을 지정하고 format 함수의 인자들을 삽입하여 출력
+
+```python
+# 1. 직접 대입
+print('{}! 내 이름은 {}이야'.format('안녕','파이썬')) 
+# 2. 변수 대입
+string = '안녕'
+name = '파이썬'
+print('{}! 내 이름은 {}이야'.format(string,name))
+```
+
+### f-strings formatting
+
+가장 최근에 나온 formatting 방법
+
+문자열 앞에 f를 추가하고 중괄호 안에 출력하고 싶은 변수명 삽입
+```python
+print(f'안녕! 내 이름은 {name}이야.')
+# 출력 형식 지정 가능
+import datetime
+to = datetime.datetime.now()
+print(f'오늘은 {to:%m}월 {to:%d}일이다.')
+```
+
+
 
 

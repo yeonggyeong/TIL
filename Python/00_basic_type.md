@@ -265,3 +265,28 @@ set_a | set_b #출력결과 -> {1, 2, 3, 6, 9} ( 중복인 3은 한 번 출력)
 # 4) 교집합
 set_a & set_b #출력결과 -> {3}
 ```
+
+#### 2-2) Dictionary
+
+dictionary는 `{}` 혹은 `dict()`로 생성
+
+key와 value가 쌍으로 구성
+
+key는 변경하지 못 하는 **immutable** data 이며, value는 변경이 가능한 **mutable** data
+
+value는 모든 자료형 가능
+
+```python
+# 1-1) dictionary 생성
+d1 = {}
+# 1-2) dictionary 생성
+d2 = dict()
+# 2-1) key값 출력
+fruit = {'사과':'apple', '바나나':'banana', '망고':'mango'}
+fruit.keys() #사과, 바나나, 망고 출력
+# 2-2) value값 출력
+fruit.values() #apple, banana, mango 출력
+# 2-3) key,value 출력
+fruit.items() #(사과,apple),(바나나,banana),(망고,mange)출력
+```
+

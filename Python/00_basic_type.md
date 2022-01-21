@@ -289,4 +289,3 @@ fruit.values() #apple, banana, mango 출력
 # 2-3) key,value 출력
 fruit.items() #(사과,apple),(바나나,banana),(망고,mange)출력
 ```
-

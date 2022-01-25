@@ -99,3 +99,27 @@ x >= y # False
 x <= y # True
 ```
 
+### 4. 논리 연산자
+
+조건문을 연결하기 위해 사용
+
+| 연산자 | 내용                                                 |
+| :----: | :--------------------------------------------------: |
+| `and`      | 모두 True 이면 True                                            |
+| `or`     | 하나라도 True면 True                |
+| `but`     | 결과의 반대 ( True -> False / False -> True)                  |
+
+```python
+# 4-1) and
+( 6 < 7 ) and ( 4 > 1 ) # True
+# 4-2) and
+( 8 > 9 ) and ( 6 < 8 ) # False
+# 4-3) or
+( 6 < 7 ) or ( 4 > 1 ) # True
+# 4-4) or
+( 8 > 9 ) and ( 6 < 8 ) # True
+# 4-5) but
+not(( 6 < 7 ) and ( 4 > 1 )) # False
+# 4-6) but
+not(( 8 > 9 ) and ( 6 < 8 )) # True
+```

@@ -82,3 +82,24 @@ if <조건식 1> :
 else:
     <조건식 1>과 <조건식 2> 모두 거짓일때 실행할 문장
 ```
+
+#### 조건 표현식
+
+`if`문을 간결하게 표현 가능
+삼항 연산자 (Ternary Operator) 라고 부르기도 함
+
+```python
+<조건식>이 참일때 값 if <조건식> else <조건식>이 거짓일때 값
+```
+
+```python
+num = 10
+print('num 은 10') if num == 10 else print('num은 10이 아님')
+# 위의 코드를 if문으로 작성
+if num == 10:
+    print('num 은 10')
+else :
+    print('num은 10이 아님')
+```
+
+`num = 10` 이기 때문에 `print('num은 10')`이 출력

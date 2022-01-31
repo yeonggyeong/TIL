@@ -134,3 +134,112 @@ i값을 수정하지 않는다면, while문은 무한 루프를 돌 가능성이
 
 위의 코드는 i가 0부터 4까지 차례대로 출력
 
+### 3. For문 ( 반복문 )
+
+원하는 코드를 반복하기 위해서는 반복문을 사용
+
+`for`문은 반복가능한 객체들의 요소를 반복
+
+```python
+for <임시변수> in <iterable data>:
+    반복할 코드
+```
+
+`for`문도 다른 제어문과 마찬가지로 **들여쓰기**와 **`:`**이 꼭 必
+- 파이썬에서는 들여쓰기를 위해 `tab`을 사용하거나 `spacebar`를 사용
+- 한칸의 들여쓰기는 `tab` 1번 혹은 `spacebar` 4번으로 통일
+- `:`이 없다면, 에러 발생
+
+```python
+# 1. string 반복
+for string in 'python':
+    print(string)
+# p
+# y
+# t
+# h
+# o
+# n
+```
+문자열을 반복할시, 문자 하나하씩 출력
+
+```python
+# 2. list, tuple 반복
+for element in ['apple','banana']:
+    print(element)
+# apple
+# banana
+```
+
+#### enumerate()
+
+반복문에서 `enumerate()`를  사용하면, 인덱스와 값을 함께 활용이 가능
+```python
+for idx, fruit in enumerate(['apple', 'banana', 'mango']):
+    print(idx, fruit)
+# 0, apple
+# 1, banana
+# 2, mango
+```
+
+인덱스가 0부터 1씩 증가하며 출력
+
+#### List comprehension
+
+List comprehension은 표현식과 제어문을 통해 리스트를 생성
+
+여러 줄의 코드를 한 줄로 줄이기 가능
+
+```python
+[ expression for 변수 in iterable data ]
+```
+
+```python
+# list comprehension
+[ num ** 3 for num in range(10)]
+# for
+nums = []
+for num in range(10):
+    nums.append(num**3)
+```
+
+위의 list comprehension코드와 for문 코드의 결과값은 동일
+
+### 4. 반복 제어문 ( break, continue, pass )
+
+#### 1) break
+
+반복문을 중간에 종료하기 위해서는  `break`를 사용
+
+`for`문, `while`문에서 빠져 나오기 위해 사용
+
+```python
+n = 0
+while n < 3 :
+    print(n)
+    if n == 1 :
+        break
+    n += 1
+```
+
+위의 코드가 실행이 된다면 `break`에 의해서 n의 값이 1이 되면 `while`문이 종료
+
+#### 2) continue
+
+일부 조건을 만족할때, 실행을 건너 뛰기 위해 사용
+
+```python
+for i in range(6) :
+    if i % 2 == 0 :
+        continue
+    print(f'{i}는 홀수다.')
+```
+
+i가 짝수이면 아래의 `print`문은 실행되지 않고 다음 반복으로 넘어감
+
+#### 3) pass
+
+아무것도 하지 않는다는 의미
+
+들여쓰기 이후 문장이 필요하지만, 할 일이 없을때 자리를 채우는 용도로 사용
+

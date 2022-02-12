@@ -12,5 +12,5 @@ def hanoi(start, median, end, n):
 n = int(input())
 move = (2 ** n) - 1
 print(move)
-if n < 20:
+if n <= 20:
     hanoi(1, 2, 3, n)
